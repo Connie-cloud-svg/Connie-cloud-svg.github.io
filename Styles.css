@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Rajdhani:wght@400;500;600;700&display=swap');
 
 /* ============================================
    CSS VARIABLES
@@ -15,8 +15,8 @@
   --text: #e6edf3;
   --text-muted: #7d8590;
   --text-dim: #4d555f;
-  --font-mono: 'Space Mono', monospace;
-  --font-sans: 'Syne', sans-serif;
+  --font-mono: 'Share Tech Mono', monospace;
+  --font-sans: 'Rajdhani', sans-serif;
   --radius: 10px;
   --nav-height: 64px;
   --transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
@@ -141,8 +141,8 @@ nav {
 
 .nav-links a {
   font-family: var(--font-mono);
-  font-size: 0.72rem;
-  letter-spacing: 0.12em;
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--text-muted);
   padding: 0.45rem 0.85rem;
