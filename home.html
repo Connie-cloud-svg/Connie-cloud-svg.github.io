@@ -1,37 +1,104 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Connie | Developer</title>
-        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Sora:wght@300;400;600&display=swap"
-            rel="stylesheet">
-        <link rel="stylesheet" href="Styles.css">
-    </head>
-    <body>
-        <nav class="nav-bar">
-            <div class="logo">connie.dev</div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Concepter Bosibori — Junior Web Developer</title>
+  <link rel="stylesheet" href="Styles.css" />
+</head>
+<body>
 
-            <ul class="nav-links">
-                <li><a href="Index.html">Home</a></li>
-                <li><a href="About.html">About</a></li>
-                <li><a href="Projects.html">Projects</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-            </ul>
-        </nav>
+  <!-- ===== NAVIGATION ===== -->
+  <header>
+    <nav>
+      <a href="index.html" class="nav-brand">
+        <span class="bracket">&lt;</span>Connie<span class="bracket">/&gt;</span>
+      </a>
 
-        <main>
-            <section id="hero">
-                <div class="hero-text">
-                    <h6>// Hi, I'm a Developer</h6>
-                    <h1>Concepter Bosibori.</h1>
-                    <p>I'm a passionate Web Developer based in Nairobi, Kenya building beautiful and functional websites.
-                         I enjoy creating user-friendly interfaces and seamless user experiences.
-                        Currently sharpening my skills in React and Node.js at the IYF We Can Academy.
-                    </p>
-                </div>
-            </section>
-        </main>
-    </body>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <label for="nav-toggle" class="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </label>
+
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <main class="page-content">
+    <section class="hero">
+      <div class="container">
+        <div class="hero-inner">
+
+          <div class="hero-text">
+            <p class="hero-eyebrow">Available for freelance work</p>
+            <h1 class="hero-name">
+              Concepter<br />
+              <span class="accent">Bosibori.</span>
+            </h1>
+            <p class="hero-role">// Junior Web Developer · Nairobi, Kenya</p>
+            <p class="hero-bio">
+              I build clean, responsive websites and love learning new technologies.
+              Currently deep in HTML, CSS, JavaScript — and now levelling up with React.
+            </p>
+            <div class="hero-cta">
+              <a href="projects.html" class="btn btn-primary">View Projects</a>
+              <a href="about.html" class="btn btn-outline">About Me</a>
+            </div>
+          </div>
+
+          <div class="hero-image-wrap">
+            <div class="avatar-ring">
+              <img
+                class="hero-avatar"
+                src="Images/pic2.jpeg"
+                alt="Concepter Bosibori"
+              />
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== HIGHLIGHTS ===== -->
+    <section class="home-highlights">
+      <div class="container">
+        <p class="section-label">What I bring</p>
+        <h2 class="section-title">Building the web,<br />one pixel at a time.</h2>
+
+        <div class="highlights-grid">
+          <div class="highlight-card">
+            <div class="highlight-icon">🎨</div>
+            <h3>Clean UI Design</h3>
+            <p>I care deeply about how things look and feel — responsive layouts, thoughtful spacing, and a sharp eye for detail.</p>
+          </div>
+          <div class="highlight-card">
+            <div class="highlight-icon">⚡</div>
+            <h3>Interactive Experiences</h3>
+            <p>JavaScript-powered interactions and dynamic UIs that keep users engaged — from DOM manipulation to React components.</p>
+          </div>
+          <div class="highlight-card">
+            <div class="highlight-icon">📱</div>
+            <h3>Mobile-First Thinking</h3>
+            <p>Every project I build is responsive by default — designed to look great on any screen size, from phone to desktop.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 <span>Concepter Bosibori</span>. Built with HTML, CSS &amp; ☕</p>
+    </div>
+  </footer>
+
+</body>
 </html>
