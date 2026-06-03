@@ -1,115 +1,158 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Concepter Bosibori — Junior Web Developer</title>
-  <link rel="stylesheet" href="Styles.css" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Concepter Bosibori — Junior Web Developer</title>
+    <link rel="stylesheet" href="Styles.css" />
+  </head>
+  <body>
+    <!-- ===== NAVIGATION ===== -->
+    <header>
+      <nav>
+        <a href="index.html" class="nav-brand">
+          <span class="bracket">&lt;</span>Connie<span class="bracket"
+            >/&gt;</span
+          >
+        </a>
 
-  <!-- ===== NAVIGATION ===== -->
-  <header>
-    <nav>
-      <a href="index.html" class="nav-brand">
-        <span class="bracket">&lt;</span>Connie<span class="bracket">/&gt;</span>
-      </a>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+        <label for="nav-toggle" class="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </label>
 
-      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
-      <label for="nav-toggle" class="hamburger" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </label>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Projects.html">Projects</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-      <ul class="nav-links">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="About.html">About</a></li>
-        <li><a href="Projects.html">Projects</a></li>
-        <li><a href="Contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <!-- ===== HERO ===== -->
+    <main class="page-content">
+      <section class="hero">
+        <div class="container">
+          <div class="hero-inner">
+            <div class="hero-text">
+              <p class="hero-eyebrow">Available for freelance work</p>
+              <h1 class="hero-name">
+                Concepter<br />
+                <span class="accent">Bosibori.</span>
+              </h1>
+              <p class="hero-role">// Junior Web Developer · Nairobi, Kenya</p>
+              <p class="hero-bio">
+                I build clean, responsive websites and love learning new
+                technologies. Skilled in HTML, CSS, JavaScript, and React — now
+                building full-stack with Node.js, REST APIs, and MongoDB,
+                deploying projects live on Render and Vercel.
+              </p>
+              <div class="hero-cta">
+                <a href="Projects.html" class="btn btn-primary"
+                  >View Projects</a
+                >
+                <a href="About.html" class="btn btn-outline">About Me</a>
+              </div>
+            </div>
 
-  <!-- ===== HERO ===== -->
-  <main class="page-content">
-    <section class="hero">
-      <div class="container">
-        <div class="hero-inner">
-
-          <div class="hero-text">
-            <p class="hero-eyebrow">Available for freelance work</p>
-            <h1 class="hero-name">
-              Concepter<br />
-              <span class="accent">Bosibori.</span>
-            </h1>
-            <p class="hero-role">// Junior Web Developer · Nairobi, Kenya</p>
-            <p class="hero-bio">
-             I build clean, responsive websites and love learning new technologies.
-            Skilled in HTML, CSS, JavaScript, and React — now building full-stack
-            with Node.js, REST APIs, and MongoDB, deploying projects live on Render and Vercel.
-            </p>
-            <div class="hero-cta">
-              <a href="Projects.html" class="btn btn-primary">View Projects</a>
-              <a href="About.html" class="btn btn-outline">About Me</a>
+            <div class="hero-image-wrap">
+              <div class="avatar-ring">
+                <img
+                  class="hero-avatar"
+                  src="Images/pic2.webp"
+                  alt="Concepter Bosibori"
+                />
+              </div>
             </div>
           </div>
+        </div>
+      </section>
 
-          <div class="hero-image-wrap">
-            <div class="avatar-ring">
-              <img
-                class="hero-avatar"
-                src="Images/pic2.jpeg"
-                alt="Concepter Bosibori"
-              />
+      <!-- ===== HIGHLIGHTS ===== -->
+      <section class="home-highlights">
+        <div class="container">
+          <p class="section-label">What I bring</p>
+          <h2 class="section-title">
+            Building the web,<br />one pixel at a time.
+          </h2>
+
+          <div class="highlights-grid">
+            <div class="highlight-card">
+              <div class="highlight-icon">🎨</div>
+              <h3>Clean UI Design</h3>
+              <p>
+                I care deeply about how things look and feel — responsive
+                layouts, thoughtful spacing, and a sharp eye for detail.
+              </p>
+            </div>
+            <div class="highlight-card">
+              <div class="highlight-icon">⚡</div>
+              <h3>Interactive Experiences</h3>
+              <p>
+                From DOM manipulation to React components — building dynamic UIs
+                that keep users engaged with clean, component-driven
+                architecture.
+              </p>
+            </div>
+            <div class="highlight-card">
+              <div class="highlight-icon">📱</div>
+              <h3>Mobile-First Thinking</h3>
+              <p>
+                Every project I build is responsive by default — designed to
+                look great on any screen size, from phone to desktop.
+              </p>
+            </div>
+            <div class="highlight-card">
+              <div class="highlight-icon">🖥️</div>
+              <h3>Full-Stack Development</h3>
+              <p>
+                Building end-to-end applications with Node.js and Express —
+                designing RESTful APIs and connecting front-end interfaces to
+                real back-end logic.
+              </p>
+            </div>
+            <div class="highlight-card">
+              <div class="highlight-icon">🚀</div>
+              <h3>Database & Deployment</h3>
+              <p>
+                Structuring and querying data with MongoDB, and shipping
+                projects to production with confidence using Render and Vercel.
+              </p>
             </div>
           </div>
-
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
-    <!-- ===== HIGHLIGHTS ===== -->
-    <section class="home-highlights">
+    <!-- ===== FOOTER ===== -->
+    <footer>
       <div class="container">
-        <p class="section-label">What I bring</p>
-        <h2 class="section-title">Building the web,<br />one pixel at a time.</h2>
-
-        <div class="highlights-grid">
-          <div class="highlight-card">
-            <div class="highlight-icon">🎨</div>
-            <h3>Clean UI Design</h3>
-            <p>I care deeply about how things look and feel — responsive layouts, thoughtful spacing, and a sharp eye for detail.</p>
-          </div>
-          <div class="highlight-card">
-            <div class="highlight-icon">⚡</div>
-            <h3>Interactive Experiences</h3>
-            <p>From DOM manipulation to React components — building dynamic UIs that keep users engaged with clean, component-driven architecture.</p>
-          </div>
-          <div class="highlight-card">
-            <div class="highlight-icon">📱</div>
-            <h3>Mobile-First Thinking</h3>
-            <p>Every project I build is responsive by default — designed to look great on any screen size, from phone to desktop.</p>
-          </div>
-          <div class="highlight-card">
-            <div class="highlight-icon">🖥️</div>
-            <h3>Full-Stack Development</h3>
-            <p>Building end-to-end applications with Node.js and Express — designing RESTful APIs and connecting front-end interfaces to real back-end logic.</p>
-          </div>
-          <div class="highlight-card">
-            <div class="highlight-icon">🚀</div>
-            <h3>Database & Deployment</h3>
-            <p>Structuring and querying data with MongoDB, and shipping projects to production with confidence using Render and Vercel.</p>
-          </div>
-        </div>
+        <p>
+          &copy; 2026 <span>Concepter Bosibori</span>. Built with HTML, CSS
+          &amp; ☕
+        </p>
       </div>
-    </section>
-  </main>
+    </footer>
 
-  <!-- ===== FOOTER ===== -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2026 <span>Concepter Bosibori</span>. Built with HTML, CSS &amp; ☕</p>
-    </div>
-  </footer>
-
-</body>
+    <script>
+        document.querySelectorAll('nav a').forEach(link => {
+    link.addEventListener('click', function(e) {
+      const href = this.getAttribute('href');
+      // Only intercept internal links
+      if (!href.startsWith('http') && !href.startsWith('#')) {
+        e.preventDefault();
+        document.body.style.opacity = '0';
+        document.body.style.transition = 'opacity 0.2s ease';
+        setTimeout(() => window.location.href = href, 200);
+      }
+    });
+  });
+    </script>
+    <script
+      src="//instant.page/5.2.0"
+      type="module"
+      integrity="sha384-jnZyxPjiipYXnSU+ygvrkboMVqcdN+MBBcz0TpFhiSi7+jn0hk3xMH8E7Fj5APC"
+    ></script>
+  </body>
 </html>

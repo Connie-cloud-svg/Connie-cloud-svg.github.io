@@ -36,7 +36,7 @@
           <!-- ===== BIO INTRO ===== -->
           <div class="about-intro">
             <div class="about-photo-main">
-              <img src="Images/pic2.jpeg" alt="Concepter Bosibori" />
+              <img src="Images/pic2.webp" alt="Concepter Bosibori" />
             </div>
 
             <div class="about-text">
@@ -80,23 +80,19 @@
 
             <div class="gallery-grid">
               <figure>
-                <a href="#photo1"
-                  ><img
-                    src="Images/toobright.jpeg"
-                    alt="Connie feeling confident"
-                /></a>
+                <img
+                  src="Images/toobright.webp"
+                  alt="Connie feeling confident"
+                />
               </figure>
               <figure>
-                <a href="#photo2"
-                  ><img
-                    src="Images/coast.jpeg"
-                    alt="Connie giving coastal vibes."
-                /></a>
+                <img
+                  src="Images/coast.webp"
+                  alt="Connie giving coastal vibes."
+                />
               </figure>
               <figure>
-                <a href="#photo3"
-                  ><img src="Images/friends.jpeg" alt="Connie with friends"
-                /></a>
+                <img src="Images/friends.webp" alt="Connie with friends" />
               </figure>
             </div>
           </div>
@@ -104,15 +100,15 @@
           <!-- Lightboxes -->
           <div class="lightbox" id="photo1">
             <a href="#" class="close">&times;</a>
-            <img src="Images/toobright.jpeg" alt="Connie feeling confident" />
+            <img src="Images/toobright.webp" alt="Connie feeling confident" />
           </div>
           <div class="lightbox" id="photo2">
             <a href="#" class="close">&times;</a>
-            <img src="Images/coast.jpeg" alt="Connie giving coastal vibes." />
+            <img src="Images/coast.webp" alt="Connie giving coastal vibes." />
           </div>
           <div class="lightbox" id="photo3">
             <a href="#" class="close">&times;</a>
-            <img src="Images/friends.jpeg" alt="Connie with friends" />
+            <img src="Images/friends.webp" alt="Connie with friends" />
           </div>
 
           <!-- ===== SKILLS ===== -->
@@ -173,16 +169,16 @@
 
               <div class="skill-card">
                 <div class="skill-icon">🟢</div>
-              <div class="skill-info">
-                <h3>Node.js</h3>
-                <p>
-                  Server-side JavaScript — building backends with Express and
-                  handling API logic.
-                </p>
-                <div class="skill-bar-wrap">
-                  <div class="skill-bar" style="width: 50%"></div>
+                <div class="skill-info">
+                  <h3>Node.js</h3>
+                  <p>
+                    Server-side JavaScript — building backends with Express and
+                    handling API logic.
+                  </p>
+                  <div class="skill-bar-wrap">
+                    <div class="skill-bar" style="width: 50%"></div>
+                  </div>
                 </div>
-              </div>
               </div>
 
               <div class="skill-card">
@@ -194,9 +190,9 @@
                     interfaces to real data.
                   </p>
                   <div class="skill-bar-wrap">
-                  <div class="skill-bar" style="width: 40%"></div>
+                    <div class="skill-bar" style="width: 40%"></div>
+                  </div>
                 </div>
-              </div>
               </div>
 
               <div class="skill-card">
@@ -232,10 +228,10 @@
                     Shipping full-stack projects to production using Render for
                     backends and Vercel for frontends.
                   </p>
-                <div class="skill-bar-wrap">
-                  <div class="skill-bar" style="width: 60%"></div>
+                  <div class="skill-bar-wrap">
+                    <div class="skill-bar" style="width: 60%"></div>
+                  </div>
                 </div>
-              </div>
               </div>
 
               <div class="skill-card">
@@ -263,5 +259,26 @@
         </p>
       </div>
     </footer>
+
+    <script>
+        document.querySelectorAll('nav a').forEach(link => {
+    link.addEventListener('click', function(e) {
+      const href = this.getAttribute('href');
+      // Only intercept internal links
+      if (!href.startsWith('http') && !href.startsWith('#')) {
+        e.preventDefault();
+        document.body.style.opacity = '0';
+        document.body.style.transition = 'opacity 0.2s ease';
+        setTimeout(() => window.location.href = href, 200);
+      }
+    });
+  });
+    </script>
+
+    <script
+      src="//instant.page/5.2.0"
+      type="module"
+      integrity="sha384-jnZyxPjiipYXnSU+ygvrkboMVqcdN+MBBcz0TpFhiSi7+jn0hk3xMH8E7Fj5APC"
+    ></script>
   </body>
 </html>

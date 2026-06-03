@@ -1,241 +1,270 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projects | Concepter Bosibori</title>
-  <link rel="stylesheet" href="Styles.css" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects | Concepter Bosibori</title>
+    <link rel="stylesheet" href="Styles.css" />
+  </head>
+  <body>
+    <!-- ===== NAVIGATION ===== -->
+    <header>
+      <nav>
+        <a href="index.html" class="nav-brand">
+          <span class="bracket">&lt;</span>Connie<span class="bracket"
+            >/&gt;</span
+          >
+        </a>
 
-  <!-- ===== NAVIGATION ===== -->
-  <header>
-    <nav>
-      <a href="index.html" class="nav-brand">
-        <span class="bracket">&lt;</span>Connie<span class="bracket">/&gt;</span>
-      </a>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+        <label for="nav-toggle" class="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </label>
 
-      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
-      <label for="nav-toggle" class="hamburger" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </label>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Projects.html" class="active">Projects</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="About.html">About</a></li>
-        <li><a href="Projects.html" class="active">Projects</a></li>
-        <li><a href="Contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main class="page-content">
-    <div class="container">
-      <section class="projects-page">
-
-        <div class="projects-header">
-          <p class="section-label">My work</p>
-          <h1 class="section-title">Projects</h1>
-          <p class="section-sub">
-            Things I've built while learning — each one taught me something new.
-          </p>
-        </div>
-
-        <div class="projects-grid">
-
-          <!-- PROJECT 1 — Portfolio (GitHub Pages) -->
-          <article class="project-card">
-            <div class="project-top">
-              <div class="project-icon">🗂️</div>
-              <div class="project-links">
-                <a
-                  href="https://github.com/Connie-cloud-svg/MyPortfolio"
-                  target="_blank"
-                  rel="noopener"
-                  class="project-link"
-                  title="GitHub"
-                  aria-label="GitHub"
-                >⌥</a>
-                <a
-                  href="https://connie-cloud-svg.github.io/"
-                  target="_blank"
-                  rel="noopener"
-                  class="project-link"
-                  title="Live Site"
-                  aria-label="Live site"
-                >↗</a>
-              </div>
-            </div>
-            <h3>Portfolio Website</h3>
-            <p>
-              A responsive personal portfolio to showcase my skills and projects.
-              Dark emerald aesthetic with a sticky nav, lightbox gallery, contact form,
-              and skills section. Hosted live on GitHub Pages.
+    <main class="page-content">
+      <div class="container">
+        <section class="projects-page">
+          <div class="projects-header">
+            <p class="section-label">My work</p>
+            <h1 class="section-title">Projects</h1>
+            <p class="section-sub">
+              Things I've built while learning — each one taught me something
+              new.
             </p>
-            <div class="project-tags">
-              <span class="tag green">HTML</span>
-              <span class="tag green">CSS</span>
-              <span class="tag gray">GitHub Pages</span>
-            </div>
-          </article>
+          </div>
 
-          <!-- PROJECT 2 — Task List (Week 07) -->
-          <article class="project-card">
-            <div class="project-top">
-              <div class="project-icon">📃</div>
-              <div class="project-links">
-                <a
-                  href="https://github.com/Connie-cloud-svg/iyf-s10-week-05-Connie-cloud-svg"
-                  target="_blank"
-                  rel="noopener"
-                  class="project-link"
-                  title="GitHub"
-                  aria-label="GitHub"
-                >⌥</a>
+          <div class="projects-grid">
+            <!-- PROJECT 1 — Portfolio (GitHub Pages) -->
+            <article class="project-card">
+              <div class="project-top">
+                <div class="project-icon">🗂️</div>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/Connie-cloud-svg/Connie-cloud-svg.github.io"
+                    target="_blank"
+                    rel="noopener"
+                    class="project-link"
+                    title="GitHub"
+                    aria-label="GitHub"
+                    >⌥</a
+                  >
+                  <a
+                    href="https://connie-cloud-svg.github.io/"
+                    target="_blank"
+                    rel="noopener"
+                    class="project-link"
+                    title="Live Site"
+                    aria-label="Live site"
+                    >↗</a
+                  >
+                </div>
               </div>
-            </div>
-            <h3>Task List App</h3>
-            <p>
-              A dynamic task list app built with vanilla JavaScript. Add, complete,
-              and delete tasks with real-time DOM updates — demonstrating event
-              handling and interactive UI state management.
-            </p>
-            <div class="project-tags">
-              <span class="tag green">HTML</span>
-              <span class="tag green">CSS</span>
-              <span class="tag yellow">JavaScript</span>
-              <span class="tag gray">IYF S10</span>
-            </div>
-          </article>
-
-          <!-- PROJECT 3 — Shopping Cart (Week 08) -->
-          <article class="project-card">
-            <div class="project-top">
-              <div class="project-icon">🛒</div>
-              <div class="project-links">
-                <a
-                  href="https://github.com/Connie-cloud-svg/iyf-s10-week-07-Connie-cloud-svg"
-                  target="_blank"
-                  rel="noopener"
-                  class="project-link"
-                  title="GitHub"
-                  aria-label="GitHub"
-                >⌥</a>
+              <h3>Portfolio Website</h3>
+              <p>
+                A responsive personal portfolio to showcase my skills and
+                projects. Hosted live on GitHub Pages.
+              </p>
+              <div class="project-tags">
+                <span class="tag green">HTML</span>
+                <span class="tag green">CSS</span>
+                <span class="tag gray">GitHub Pages</span>
               </div>
-            </div>
-            <h3>Shopping Cart App</h3>
-            <p>
-              A vanilla JS shopping cart fetching live product data from DummyJSON API.
-              Features category filters, skeleton loading states, a slide-in cart
-              drawer, quantity controls, and discount pricing logic.
-            </p>
-            <div class="project-tags">
-              <span class="tag green">HTML</span>
-              <span class="tag green">CSS</span>
-              <span class="tag yellow">JavaScript</span>
-              <span class="tag blue">REST API</span>
-              <span class="tag gray">IYF S10</span>
-            </div>
-          </article>
+            </article>
 
-          <!-- PROJECT 4 — CommunityHub (React) -->
-          <article class="project-card">
-            <div class="project-top">
-              <div class="project-icon">⚛️</div>
-              <div class="project-links">
-                <a
-                  href="https://github.com/Connie-cloud-svg/iyf-s10-week-12-team-Connie-cloud-svg"
-                  target="_blank"
-                  rel="noopener"
-                  class="project-link"
-                  title="GitHub"
-                  aria-label="GitHub"
-                >⌥</a>
+            <!-- PROJECT 2 — Task List (Week 07) -->
+            <article class="project-card">
+              <div class="project-top">
+                <div class="project-icon">📃</div>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/Connie-cloud-svg/iyf-s10-week-05-Connie-cloud-svg"
+                    target="_blank"
+                    rel="noopener"
+                    class="project-link"
+                    title="GitHub"
+                    aria-label="GitHub"
+                    >⌥</a
+                  >
+                </div>
               </div>
-            </div>
-            <h3>CommunityHub — React App</h3>
-            <p>
-              A React community platform built at IYF Weekend Academy. Features a
-              live-search post feed, create-post form, user cards, reusable
-              components, and multi-page routing with React Router.
-            </p>
-            <div class="project-tags">
-              <span class="tag blue">React</span>
-              <span class="tag yellow">JavaScript</span>
-              <span class="tag gray">Vite</span>
-              <span class="tag purple">React Router</span>
-            </div>
-          </article>
-
-          <!-- PROJECT 5 — Weather Dashboard (Week 06) -->
-          <article class="project-card">
-            <div class="project-top">
-              <div class="project-icon">🌤️</div>
-              <div class="project-links">
-                <a
-                  href="https://github.com/Connie-cloud-svg/iyf-s10-week-06-Connie-cloud-svg"
-                  target="_blank"
-                  rel="noopener"
-                  class="project-link"
-                  title="GitHub"
-                  aria-label="GitHub"
-                >⌥</a>
+              <h3>Task List App</h3>
+              <p>
+                A dynamic task list app built with vanilla JavaScript. Add,
+                complete, and delete tasks with real-time DOM updates —
+                demonstrating event handling and interactive UI state
+                management.
+              </p>
+              <div class="project-tags">
+                <span class="tag green">HTML</span>
+                <span class="tag green">CSS</span>
+                <span class="tag yellow">JavaScript</span>
+                <span class="tag gray">IYF S10</span>
               </div>
-            </div>
-            <h3>Weather Dashboard</h3>
-            <p>
-              A weather dashboard that fetches and displays real-time conditions
-              and forecasts for a given location. Demonstrates API integration,
-              async JavaScript, and dynamic data rendering.
-            </p>
-            <div class="project-tags">
-              <span class="tag green">HTML</span>
-              <span class="tag green">CSS</span>
-              <span class="tag yellow">JavaScript</span>
-              <span class="tag blue">Weather API</span>
-              <span class="tag gray">IYF S10</span>
-            </div>
-          </article>
+            </article>
 
-                    <!-- coming soon -->
-          <article class="project-card">
-            <div class="project-top">
-              <div class="project-icon">🛠️</div>
-              <div class="project-links">
-                <a
-                  href="Contact.html"
-                  target="_blank"
-                  rel="noopener"
-                  class="project-link"
-                  title="GitHub"
-                  aria-label="GitHub"
-                >⌥</a>
+            <!-- PROJECT 3 — Shopping Cart (Week 08) -->
+            <article class="project-card">
+              <div class="project-top">
+                <div class="project-icon">🛒</div>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/Connie-cloud-svg/iyf-s10-week-07-Connie-cloud-svg"
+                    target="_blank"
+                    rel="noopener"
+                    class="project-link"
+                    title="GitHub"
+                    aria-label="GitHub"
+                    >⌥</a
+                  >
+                </div>
               </div>
-            </div>
-            <h3>Coming Soon</h3>
-            <p>
-              I'm always working on new projects and learning new technologies.
-              Check back soon for updates — or reach out if you want to collaborate!
-            </p>
-            <div class="project-tags">
-              <span class="tag yellow"></span>
-              <span class="tag gray"></span>
-              <span class="tag gray"></span>
-            </div>
-          </article>
+              <h3>Shopping Cart App</h3>
+              <p>
+                A vanilla JS shopping cart fetching live product data from
+                DummyJSON API. Features category filters, skeleton loading
+                states, a slide-in cart drawer, quantity controls, and discount
+                pricing logic.
+              </p>
+              <div class="project-tags">
+                <span class="tag green">HTML</span>
+                <span class="tag green">CSS</span>
+                <span class="tag yellow">JavaScript</span>
+                <span class="tag blue">REST API</span>
+                <span class="tag gray">IYF S10</span>
+              </div>
+            </article>
 
-        </div>
+            <!-- PROJECT 4 — CommunityHub (React) -->
+            <article class="project-card">
+              <div class="project-top">
+                <div class="project-icon">⚛️</div>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/Connie-cloud-svg/iyf-s10-week-12-team-Connie-cloud-svg"
+                    target="_blank"
+                    rel="noopener"
+                    class="project-link"
+                    title="GitHub"
+                    aria-label="GitHub"
+                    >⌥</a
+                  >
+                </div>
+              </div>
+              <h3>CommunityHub — React App</h3>
+              <p>
+                A React community platform built at IYF Weekend Academy.
+                Features a live-search post feed, create-post form, user cards,
+                reusable components, and multi-page routing with React Router.
+              </p>
+              <div class="project-tags">
+                <span class="tag blue">React</span>
+                <span class="tag yellow">JavaScript</span>
+                <span class="tag gray">Vite</span>
+                <span class="tag purple">React Router</span>
+              </div>
+            </article>
 
-      </section>
-    </div>
-  </main>
+            <!-- PROJECT 5 — Weather Dashboard (Week 06) -->
+            <article class="project-card">
+              <div class="project-top">
+                <div class="project-icon">🌤️</div>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/Connie-cloud-svg/iyf-s10-week-06-Connie-cloud-svg"
+                    target="_blank"
+                    rel="noopener"
+                    class="project-link"
+                    title="GitHub"
+                    aria-label="GitHub"
+                    >⌥</a
+                  >
+                </div>
+              </div>
+              <h3>Weather Dashboard</h3>
+              <p>
+                A weather dashboard that fetches and displays real-time
+                conditions and forecasts for a given location. Demonstrates API
+                integration, async JavaScript, and dynamic data rendering.
+              </p>
+              <div class="project-tags">
+                <span class="tag green">HTML</span>
+                <span class="tag green">CSS</span>
+                <span class="tag yellow">JavaScript</span>
+                <span class="tag blue">Weather API</span>
+                <span class="tag gray">IYF S10</span>
+              </div>
+            </article>
 
-  <!-- ===== FOOTER ===== -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2026 <span>Concepter Bosibori</span>. Built with HTML, CSS &amp; ☕</p>
-    </div>
-  </footer>
+            <!-- coming soon -->
+            <article class="project-card">
+              <div class="project-top">
+                <div class="project-icon">🛠️</div>
+                <div class="project-links">
+                  <a
+                    href="Contact.html"
+                    target="_blank"
+                    rel="noopener"
+                    class="project-link"
+                    title="GitHub"
+                    aria-label="GitHub"
+                    >⌥</a
+                  >
+                </div>
+              </div>
+              <h3>Coming Soon</h3>
+              <p>
+                I'm always working on new projects and learning new
+                technologies. Check back soon for updates — or reach out if you
+                want to collaborate!
+              </p>
+              <div class="project-tags">
+                <span class="tag yellow"></span>
+                <span class="tag gray"></span>
+                <span class="tag gray"></span>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
 
-</body>
+    <!-- ===== FOOTER ===== -->
+    <footer>
+      <div class="container">
+        <p>
+          &copy; 2026 <span>Concepter Bosibori</span>. Built with HTML, CSS
+          &amp; ☕
+        </p>
+      </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('nav a').forEach(link => {
+    link.addEventListener('click', function(e) {
+      const href = this.getAttribute('href');
+      // Only intercept internal links
+      if (!href.startsWith('http') && !href.startsWith('#')) {
+        e.preventDefault();
+        document.body.style.opacity = '0';
+        document.body.style.transition = 'opacity 0.2s ease';
+        setTimeout(() => window.location.href = href, 200);
+      }
+    });
+  });
+    </script>
+    <script
+      src="//instant.page/5.2.0"
+      type="module"
+      integrity="sha384-jnZyxPjiipYXnSU+ygvrkboMVqcdN+MBBcz0TpFhiSi7+jn0hk3xMH8E7Fj5APC"
+    ></script>
+  </body>
 </html>
