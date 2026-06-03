@@ -840,6 +840,20 @@ nav {
   min-height: 130px;
 }
 
+.success-msg {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.success-msg h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.success-msg span {
+  opacity: 0.7;
+}
+
 /* Contact sidebar */
 .contact-sidebar {
   display: flex;
